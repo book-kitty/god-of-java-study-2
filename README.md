@@ -3,8 +3,9 @@
 - 자바의 신 2권 이상민 지음
 
 ## ✔️ 인원
-- 총 5명
-
+| 박우람 | 박성규 | 양윤혁 | 홍승근 | 백성윤 |
+| ---| --- | --- | --- | ---- |
+| [gzgzg2](https://github.com/gzgzg2)|[ParkSungGyu1](https://github.com/ParkSungGyu1)|[yangyunhyeuk](https://github.com/yangyunhyeuk) |[hongseungkeun](https://github.com/orgs/book-kitty/people/hongseungkeun) |[newbiebsy](https://github.com/newbiebsy) |
 ## ✔️ 기간
 - 2023.01.18(수) 21:00 OT
 - 
