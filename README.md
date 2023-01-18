@@ -8,7 +8,7 @@
 | [gzgzg2](https://github.com/gzgzg2)|[ParkSungGyu1](https://github.com/ParkSungGyu1)|[yangyunhyeuk](https://github.com/yangyunhyeuk) |[hongseungkeun](https://github.com/orgs/book-kitty/people/hongseungkeun) |[newbiebsy](https://github.com/newbiebsy) |
 ## ✔️ 기간
 - 2023.01.18(수) 21:00 OT
-- 2023.
+- 2023.01.18(수) ~ 2023.03.08(수)
 
 ## ✔️ 규칙
 - 공부자료, 문제 미제출, 10분 지각, 미참석 시 벌금 **5000원** (총 15000)
