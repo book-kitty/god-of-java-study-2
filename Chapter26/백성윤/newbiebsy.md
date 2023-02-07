@@ -45,4 +45,21 @@
 
 > 위에서 child라고 되어 있는 값은 경로가 될 수도 있고, 파일 이름도 될 수 있다.   
 > 그리고, 가장 마지막 생성자에 있는 URI는 Uniform Resource Identifier의 약자로, 어떠한 리소스를 가리키기 위한 경로를 뜻한다.
+> 
+> *File 클래스에는 separator라는 것이 static 변수로 존재한다.(실행중인 OS에 맞게 구분자를 리턴한다.)*
+>
+> mkdir() 메소드는 하나의 디렉토리를 만들고 mkdirs() 메소드는 여러개의 하위 디렉토리를 만든다.
+
+### File 클래스를 이용하여 파일을 처리하자
+> createNewFile() 메소드는 IOException을 던진다.
+> 
+> FileFilter, FilenameFilter 인터페이스는 파일 관련 리스트를 가져올 때 필터 역할을 한다.
+> 
+> FileFilter 인터페이스에 선언되어 있는 메소드는 아래와 같다.
+> 
+| 리턴 타입   | 메소드 이름 및 매개 변수        | 설명                                |
+|---------|-----------------------|-----------------------------------|
+| boolean | accept(File pathname) | 매개 변수로 넘어온 File 객체가 조건에 맞는지 확인한다. |
+
+> FilenameFilter
 
