@@ -100,5 +100,24 @@
 > - 각종 확인 (get,is 로 시작되는 메소드들로 파일의 상태를 확인함)
 > 
 > 매우 많은 메소드가 존재하기 때문에 API 문서를 참고하자.
+
+### 파일이 변경되었는지 확인하는 WatchService 클래스
+> 기존에는 파일이 변경되었는지 확인하려면 lastModified() 메소드를 사용하여 비교하는 방법을 사용했는데, 
+> 이 방법은 메소드를 주기적으로 호출해야 하고 내부적으로 호출되는 메소드가 많아 성능에 좋지 않았다.   
 > 
+> 이러한 단점을 보완하기 위해서 Java 7 부터는 WatchService 라는 인터페이스를 제공한다.
+> 해당 인터페이스를 이용하면 실시간으로 디렉토리의 파일이 생성되거나, 수정,삭제 되는 경우를 확인할 수 있다.
+
+### 파일과 관련된 다른 새로운 API
+> NIO2에서 추가된 클래스에는 다음과 같은 것들이 있다.
 > 
+> - SeekableByteChannel (random access)
+>   - 해당 인터페이스는 java.nio.channels 패키지에 선언되어 있으며, 바이트 기반의 채널을 처리하는 데 사용된다.
+> - NetworkChannel 및 MulticastChannel
+>   - NetworkChannel은 네트워크 소켓을 처리하기 위한 채널이다. 네트워크 연결에 대한 바인딩, 소켓 옵션을 셋팅하고, 로컬 주소를 알려주는 인터페이스다.
+>   - MulticastChannel은 IP 멀티캐스트를 지원하는 네트워크 채널이다. 멀티 캐스트는 네트워크 주소인 IP를 그룹으로 묶고, 그 그룹에 데이터를 전송하는 방식을 말한다.
+> - AsynchronousFileChannel
+>   - Asynchronous 는 비동기 처리를 의미한다. AsynchronousFileChannel을 처리한 결과는 java.utile.concurrent 패키지의 Future 객체로 받게 된다.
+>   - Future 인터페이스로 결과를 받지 않으면, CompletionHandler 라는 인터페이스를 구현한 객체로 받을 수도 있다.
+
+
